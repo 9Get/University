@@ -11,7 +11,7 @@ app.Run(async (context) =>
 	company.BranchesNumber += 2;
 	await context.Response.WriteAsync(company.ToString());
 
-	await context.Response.WriteAsync($"{random.Next(0, 101)}");
+	await context.Response.WriteAsync($"Random value: {random.Next(0, 101)}");
 });
 
 app.Run();
